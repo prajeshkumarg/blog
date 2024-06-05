@@ -22,8 +22,8 @@ And I think this is how art evolves, passing down through various generations an
 ```
 
 <div class="table-container">
-    <img class="table-col" src="/images/Rasaali.png" alt="lyrics 1" >
-    <img class="table-col" src="/images/Muthaitharu.png" alt="lyrics 2" >
+    <img class="table-col" src="Rasaali.png" alt="Yethu thisai muttum yenai pagalinil Kottum pani mattum thunai iravinil Nettum oru pattu kural manathinil madiveno" >
+    <img class="table-col" src="Muthaitharu.png" alt="Muthai tharubaththi thirunagai Aththikirai saththi saravana Mukththikoru viththu kurupara yena odhum" >
 </div>
 
 (Try singing these in alternates, it fits perfectly and syncs so well !!) 
