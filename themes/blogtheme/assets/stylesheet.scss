@@ -98,14 +98,22 @@ html, body{
             
             & .table-col{ 
                 padding: 4px;
-                max-height: 30%;
-                max-width: 30%;
+                max-height: 45%;
+                max-width: 45%;
             }
+        }
+
+        & h1{
+            font-size: 1.5rem;
         }
 
 
         & p{
             font-size: 1.2rem;
+        }
+
+        & li{
+            font-size: 1.2rem
         }
 
         & a{
