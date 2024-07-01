@@ -4,7 +4,7 @@ title: About
 <div class="main-construction">
     <div class="about">
         <p class="about-question">Who am I - </p>
-        <p class="about-highlight">Human/ Engineer/ Son/ Friend/ Batman ?> Just go through my socials below 👀.</p>
+        <p class="about-highlight">Human/ Engineer/ Son/ Brother/ Friend/ Batman ?> Just go through my socials below 👀.</p>
         <ul>
             <li><a href="https://www.linkedin.com/in/prajesh-kumar-g-779377158/">- Linkedin</a></li>
             <li><a href="https://github.com/prajeshkumarg">- GitHub</a></li>
