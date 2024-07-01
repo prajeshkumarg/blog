@@ -72,9 +72,53 @@ html, body{
         display: flex;
         justify-content: start;
         align-items: center;
-        min-height: 100%;
-        & p{
-            font-size: 1.3rem;
+        
+    }
+
+    .about{
+        margin: 4em 0px;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 1rem;
+        & .about-question{
+            font-style: italic;
+            font-size: 0.9rem;
+            color: lightcyan;
+        }
+        & .about-highlight{
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        & ul{
+            padding: 0;
+            list-style: none;
+        }
+
+        & a {
+            text-decoration: none;
+            color: lightblue;
+            font-style: italic;
+        }
+
+        & a:hover {
+            font-style: bold;
+            color: antiquewhite;
+        }
+    }
+
+    .main{
+        margin: 4em 0px;
+        text-align: left;
+        line-height: 1.5;
+
+        & .main-emoji{
+            font-size: 2rem;
+        }
+        & .main-subscript {
+            font-size: 1.2rem;
+            text-align: start;
         }
     }
 
@@ -153,8 +197,8 @@ html, body{
 @media (min-width: 768px) {
     
     .container{
-        min-width: 80%;
-        max-width: 80%;
+        min-width: 75%;
+        max-width: 75%;
     }
 
 
@@ -169,13 +213,36 @@ html, body{
         flex-direction: row;
         align-items: center;
         margin-top: 0em;
-        font-size: 2rem;
+        font-size: 1.5rem;
         justify-content: space-between;
     }
+
     .main-construction{
-        justify-content: center;
+        
+        & .main{
+            width: 100%;
+        }
+        & .about{
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+    .about{
+        
+        font-size: 1.5rem;
+        & .about-question{
+            font-size: 1.1rem;
+        }
+        & .about-highlight{
+            font-size: 2rem;
+        }
+
+        & a{
+            font-size: 1.3rem;
+        }
     }
 
+    
     .main-post{
         width: auto;
         font-size: 1.1rem;
@@ -206,12 +273,11 @@ html, body{
 @media (min-width: 1080px)  {
 
     .container{
-        min-width: 50%;
-        max-width: 50%;
+        min-width: 40%;
+        max-width: 40%;
     }
 
     .main-construction{
-        justify-content: center;
         & p{
             font-size: 2rem;
         }
