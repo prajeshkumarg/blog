@@ -1,6 +1,5 @@
 ---
 title: How did I not know this before!
-Date: 2024-05-17
 ---
 
 # How did I not know this before!
