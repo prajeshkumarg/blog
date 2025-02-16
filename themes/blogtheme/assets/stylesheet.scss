@@ -132,6 +132,11 @@ html, body{
             white-space: pre-line;
             font-size: 1rem;
             font-style: italic;
+            text-align: left;
+           
+            & span{
+                margin: 0px 4px;
+            }
         }
 
         & .table-container{
