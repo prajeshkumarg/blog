@@ -159,4 +159,4 @@ Note: <i>The counting_semaphore is available from C++20 and not on the previous 
 
 
 Apart from the above solutions, there are other approaches to address race condtion such as atomic operations and read-write locks.
-To prevent race conditions, one can minimize the use of shared resoruces, use thread safe data structures like concurrenc queues, keep the critical sections small and follow consistent locking and unlocking.
+To prevent race conditions, one can minimize the use of shared resoruces, use thread safe data structures like concurrent queues, keep the critical sections small and follow consistent locking and unlocking.
