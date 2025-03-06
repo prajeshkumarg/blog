@@ -3,3 +3,4 @@
 <title>{{ .Params.title }}</title>
 {{ $style := resources.Get "stylesheet.scss" | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ template "_internal/google_analytics.html" . }}
