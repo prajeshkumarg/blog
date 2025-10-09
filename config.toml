@@ -7,6 +7,10 @@ theme = 'blogtheme'
 [markup.goldmark.renderer]
 unsafe= true
 
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
 [menu]
     
     [[menu.main]]

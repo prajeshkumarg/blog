@@ -1,8 +1,9 @@
 ---
 title: Security Byte 01
+categories: ["Tech"]
 ---
-
 # Security Byte-01 cURL-ing your way on the internet
+
 
 cURL - is probably one of the most handy tool to use on the linux terminal. A quick run of the man curl command brings up the manual page for curl. curl supports numerous protocols for URL, although this blog post will mainls focus on HTTP(S) requests to a server. The objective of this blog post is to serve as a cheat sheet sort of page with curl shortcuts and explanations to them. HTTP has various request methods but lets limit the discussion to GET and POST
 <hr>

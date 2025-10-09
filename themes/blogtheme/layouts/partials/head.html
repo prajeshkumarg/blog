@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ .Params.title }}</title>
-{{ $style := resources.Get "stylesheet.scss" | resources.ToCSS | resources.Minify }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{- $style := resources.Get "stylesheet.scss" | css.Sass | resources.Minify | resources.Fingerprint "sha256" -}}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="sha256-{{ $style.Data }}">
 {{ template "_internal/google_analytics.html" . }}

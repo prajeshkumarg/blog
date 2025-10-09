@@ -33,12 +33,12 @@ html, body{
         width: 100%;
         & a{
             text-decoration: none;
-            color: antiquewhite;
+            color: whitesmoke;
         }
 
         & a:hover,a:focus{
             font-style: bold;
-            color: lightcyan;
+            color: cyan;
         }
         
     }
@@ -60,13 +60,12 @@ html, body{
         width: 40%;
         font-size: 1.2rem;
         align-items: center;
-        justify-content: space-between;
         margin-top: 1em;
         
     }
 
     .main-container{
-        color: antiquewhite;  
+        color: whitesmoke;
         padding: 16px;
     }
 
@@ -85,7 +84,7 @@ html, body{
         & .about-question{
             font-style: italic;
             font-size: 0.9rem;
-            color: lightcyan;
+            color: cyan;
         }
         & .about-highlight{
             font-weight: bold;
@@ -116,7 +115,7 @@ html, body{
         line-height: 1.5;
 
         & .main-emoji{
-            font-size: 2rem;
+            font-size: 3rem;
         }
         & .main-subscript {
             font-size: 1.2rem;
@@ -231,10 +230,15 @@ html, body{
         justify-content: space-between;
     }
 
+    
+
     .main-construction{
         
         & .main{
             width: 100%;
+            & .main-emoji{
+                font-size: 8rem;
+            }
         }
         & .about{
             width: 100%;
@@ -299,6 +303,32 @@ html, body{
             font-size: 2rem;
         }
     }
+}
+
+/* Override: ensure paragraphs inside .main use the same smaller sizing as content */
+@media (min-width: 1080px) {
+    .main p, .main .main-subscript {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+
+/* Home page specific styles */
+/* (reverted .main-home custom styles) */
+
+/* Keep only the home page link color change */
+.main-home-linkcolor a {
+    color: lightcyan;
+}
+
+/* Name tag styling for the home page */
+.name-tag {
+    /* Make the name text cyan and remove pill background */
+    color: cyan;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 700;
 }
 
     

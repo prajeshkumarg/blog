@@ -1,5 +1,7 @@
 ---
 title: Race Conditions
+
+categories: ["Tech"]
 ---
 
 # Race Conditions
