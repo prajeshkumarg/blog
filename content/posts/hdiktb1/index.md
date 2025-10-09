@@ -1,5 +1,6 @@
 ---
 title: How did I not know this before!
+categories: ["Music"]
 ---
 
 # How did I not know this before!

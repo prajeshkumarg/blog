@@ -1,9 +1,41 @@
 {{ define "main" }}
   <h1>My posts</h1>
+
+  <h2>Tech</h2>
   <ul>
-  {{ range .Pages }}
+  {{ range where .Pages "Params.categories" "intersect" (slice "Tech") }}
     <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ if .Params.external_url }}
+        <a href="{{ .Params.external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+      {{ else }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </li>
+  {{ end }}
+  </ul>
+
+  <h2>CTF Writeups</h2>
+  <ul>
+  {{ range where .Pages "Params.categories" "intersect" (slice "CTF") }}
+    <li>
+      {{ if .Params.external_url }}
+        <a href="{{ .Params.external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+      {{ else }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </li>
+  {{ end }}
+  </ul>
+
+  <h2>Music</h2>
+  <ul>
+  {{ range where .Pages "Params.categories" "intersect" (slice "Music") }}
+    <li>
+      {{ if .Params.external_url }}
+        <a href="{{ .Params.external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+      {{ else }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
     </li>
   {{ end }}
   </ul>

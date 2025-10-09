@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
-
+*.public
 # Firebase cache
 .firebase/
 
@@ -64,3 +64,8 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Hugo generated output - don't commit build artifacts
+public/
+resources/
+resources/_gen/

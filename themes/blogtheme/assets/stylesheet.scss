@@ -8,6 +8,8 @@ html, body{
     justify-content: center;
     display: flex;
     background-color: #201E1F;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 @media (min-width:0px){
@@ -31,12 +33,12 @@ html, body{
         width: 100%;
         & a{
             text-decoration: none;
-            color: antiquewhite;
+            color: whitesmoke;
         }
 
         & a:hover,a:focus{
             font-style: bold;
-            color: lightcyan;
+            color: cyan;
         }
         
     }
@@ -58,13 +60,12 @@ html, body{
         width: 40%;
         font-size: 1.2rem;
         align-items: center;
-        justify-content: space-between;
         margin-top: 1em;
         
     }
 
     .main-container{
-        color: antiquewhite;  
+        color: whitesmoke;
         padding: 16px;
     }
 
@@ -83,7 +84,7 @@ html, body{
         & .about-question{
             font-style: italic;
             font-size: 0.9rem;
-            color: lightcyan;
+            color: cyan;
         }
         & .about-highlight{
             font-weight: bold;
@@ -114,7 +115,7 @@ html, body{
         line-height: 1.5;
 
         & .main-emoji{
-            font-size: 2rem;
+            font-size: 3rem;
         }
         & .main-subscript {
             font-size: 1.2rem;
@@ -127,14 +128,21 @@ html, body{
         text-align: justify;
         line-height: 1.7;
         font-size: 0.6rem;
-        
+
+        & .single-imgs{
+            display: flex;
+            justify-content: space-around;
+            max-width: 100%;
+            overflow: hidden;
+        }
         & code {
-            white-space: pre-line;
-            font-size: 1rem;
-            font-style: italic;
+            white-space: pre-wrap;
+            font-size: 0.7rem;
             text-align: left;
            
             & span{
+                width: 100%;
+
                 margin: 0px 4px;
             }
         }
@@ -222,10 +230,15 @@ html, body{
         justify-content: space-between;
     }
 
+    
+
     .main-construction{
         
         & .main{
             width: 100%;
+            & .main-emoji{
+                font-size: 8rem;
+            }
         }
         & .about{
             width: 100%;
@@ -251,6 +264,9 @@ html, body{
     .main-post{
         width: auto;
         font-size: 1.1rem;
+        & code {
+            font-size: 0.9rem;
+        }
         
         & h1{
             font-size: 2.5rem;
@@ -287,6 +303,32 @@ html, body{
             font-size: 2rem;
         }
     }
+}
+
+/* Override: ensure paragraphs inside .main use the same smaller sizing as content */
+@media (min-width: 1080px) {
+    .main p, .main .main-subscript {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+
+/* Home page specific styles */
+/* (reverted .main-home custom styles) */
+
+/* Keep only the home page link color change */
+.main-home-linkcolor a {
+    color: lightcyan;
+}
+
+/* Name tag styling for the home page */
+.name-tag {
+    /* Make the name text cyan and remove pill background */
+    color: cyan;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 700;
 }
 
     
